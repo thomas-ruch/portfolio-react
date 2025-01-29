@@ -1,0 +1,42 @@
+@use "../../scss/utils";
+
+footer {
+  @extend %flex-center;
+  width: 100vw;
+  flex-direction: column;
+  background-color: black;
+  color: utils.$txt-dark-bg;
+  padding: 70px 0 30px;
+  cursor: default;
+
+  img {
+    height: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer-legal-notice {
+  font-size: 20px;
+}
+
+@media (min-width: utils.$desktop-max-width) {
+  footer {
+    translate: calc(-1 * (100vw - utils.$desktop-max-width) / 2);
+  }
+}
+
+@media (max-width: utils.$small-screen-width) {
+  footer {
+    padding: 80px 0;
+
+    img {
+      height: 45px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer-legal-notice {
+    align-items: center;
+    font-size: 14px;
+  }
+}

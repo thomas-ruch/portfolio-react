@@ -1,0 +1,49 @@
+@use "../../scss/utils";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  img {
+    height: 60px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 550;
+      color: utils.$txt-light-bg;
+    }
+  }
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+@media (max-width: utils.$small-screen-width) {
+  header {
+    margin-bottom: 10px;
+
+    img {
+      height: 50px;
+    }
+
+    nav {
+      gap: 15px;
+
+      a {
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
