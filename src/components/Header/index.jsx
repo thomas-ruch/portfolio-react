@@ -7,18 +7,9 @@ function Header() {
         <h1>Thomas Ruch</h1>
       </NavLink>
       <nav>
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? "active-link" : "")}
-        >
-          Accueil
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) => (isActive ? "active-link" : "")}
-        >
-          A propos
-        </NavLink>
+        <NavLink to="/#home-gallery">Travaux</NavLink>
+        <NavLink to="/#home-about">A propos</NavLink>
+        <NavLink to="/#home-contact">Contact</NavLink>
       </nav>
     </header>
   );

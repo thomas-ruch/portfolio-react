@@ -1,0 +1,47 @@
+@use "../scss/utils";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  background-color: utils.$bg-light;
+}
+
+#root {
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: utils.$desktop-max-width;
+  flex-grow: 1;
+  margin: 0 50px;
+}
+
+.conditionnal-break {
+  display: none;
+}
+
+@media (max-width: utils.$small-screen-width) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header,
+  main {
+    margin: 0 30px;
+  }
+
+  .conditionnal-break {
+    display: unset;
+  }
+}

@@ -1,0 +1,29 @@
+@use "../../scss/utils";
+
+.home-title {
+  height: 100vw;
+}
+
+.home-gallery {
+  @extend %flex-center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: utils.$small-screen-width) {
+  .home-banner {
+    height: 110px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .home-gallery {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: utils.$small-screen-width) {
+  .home-banner {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

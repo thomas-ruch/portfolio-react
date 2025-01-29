@@ -2,9 +2,8 @@
 
 footer {
   @extend %flex-center;
-  width: 100vw;
   flex-direction: column;
-  background-color: black;
+  background-color: utils.$bg-dark;
   color: utils.$txt-dark-bg;
   padding: 70px 0 30px;
   cursor: default;
@@ -17,12 +16,6 @@ footer {
 
 .footer-legal-notice {
   font-size: 20px;
-}
-
-@media (min-width: utils.$desktop-max-width) {
-  footer {
-    translate: calc(-1 * (100vw - utils.$desktop-max-width) / 2);
-  }
 }
 
 @media (max-width: utils.$small-screen-width) {

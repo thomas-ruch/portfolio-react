@@ -1,12 +1,9 @@
-import logo from "../../assets/logo-white.png";
-
 function Footer() {
   return (
     <footer>
-      <img src={logo} alt="logo Kasa" />
       <div className="footer-legal-notice">
         <span>
-          © 2020 Kasa. All <br className="conditionnal-break" />
+          © 2025 Thomas Ruch. All <br className="conditionnal-break" />
           rights reserved
         </span>
       </div>
