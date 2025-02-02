@@ -1,0 +1,32 @@
+[
+  {
+    "id": "001",
+    "title": "Javascript",
+    "fa_icon": "fa-brands fa-square-js"
+  },
+  {
+    "id": "002",
+    "title": "HTML",
+    "fa_icon": "fa-brands fa-html5"
+  },
+  {
+    "id": "003",
+    "title": "CSS",
+    "fa_icon": "fa-brands fa-css3-alt"
+  },
+  {
+    "id": "004",
+    "title": "SASS",
+    "fa_icon": "fa-brands fa-sass"
+  },
+  {
+    "id": "005",
+    "title": "Node.js",
+    "fa_icon": "fa-brands fa-node-js"
+  },
+  {
+    "id": "006",
+    "title": "Express",
+    "fa_icon": "fa-solid fa-truck-fast"
+  }
+]

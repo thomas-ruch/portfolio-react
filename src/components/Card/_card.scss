@@ -1,36 +1,41 @@
 @use "../../scss/utils";
 
 .card {
-  height: 320px;
-  width: 320px;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  position: relative;
   margin: 20px 0;
   cursor: pointer;
+
+  .card-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
   }
 
   span {
-    width: 50%;
-    @extend %shadowed-text;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    color: utils.$txt-dark-bg;
-    z-index: 100;
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
+    color: utils.$txt-light-bg;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 }
 

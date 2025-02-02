@@ -1,11 +1,11 @@
 @use "../../scss/utils";
 
 .gallery {
+  width: 100%;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border-radius: 20px;
   background-color: utils.$secondary-color;
   padding: 20px;
 }

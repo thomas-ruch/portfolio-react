@@ -2,10 +2,13 @@
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: utils.$bg-dark;
   color: utils.$txt-dark-bg;
-  padding: 0 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   h1 {
     font-size: 16px;
@@ -17,6 +20,7 @@ header {
     text-decoration: none;
     font-size: 16px;
     font-weight: 550;
+    color: utils.$txt-dark-bg;
   }
 
   a:visited {

@@ -1,29 +1,50 @@
 @use "../../scss/utils";
 
-.home-title {
-  height: 100vw;
+.inner-section {
+  max-width: utils.$desktop-max-width;
+  margin: auto;
 }
 
-.home-gallery {
+#home-title {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 30px;
+    font-weight: 900;
+  }
+}
+
+#home-gallery {
+  display: flex;
+  flex-direction: column;
   @extend %flex-center;
   margin-bottom: 50px;
+  background-color: utils.$secondary-color;
 }
 
-@media (max-width: utils.$small-screen-width) {
-  .home-banner {
-    height: 110px;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+#home-about {
+  background-color: utils.$main-color;
 
-  .home-gallery {
-    margin-bottom: 0;
+  p {
+    width: 60%;
   }
 }
 
-@media (max-width: utils.$small-screen-width) {
-  .home-banner {
-    margin-top: 20px;
-    margin-bottom: 10px;
+#home-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: utils.$secondary-color;
+
+  .list-skills {
+    display: flex;
+    gap: 20px;
   }
+}
+
+#home-contact {
+  background-color: utils.$main-color;
 }

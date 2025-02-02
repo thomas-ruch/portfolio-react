@@ -1,0 +1,10 @@
+@use "../../scss/utils";
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  background-color: utils.$main-color;
+  padding: 10px;
+  border-radius: 15px;
+  align-items: center;
+}

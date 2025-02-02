@@ -4,21 +4,24 @@
     "title": "Booki",
     "description": "Front-end",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-    "tags": ["HTML 5", "CSS 3"]
+    "tags": ["HTML 5", "CSS 3"],
+    "url": "https://thomas-ruch.github.io/Projet-Booki/"
   },
   {
     "id": "002",
     "title": "Sophie Bluel",
     "description": "Front-end",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-    "tags": ["HTML/CSS", "Javascript"]
+    "tags": ["HTML/CSS", "Javascript"],
+    "url": "https://thomas-ruch.github.io/Projet-3-Bluel/"
   },
   {
     "id": "003",
     "title": "Nina Carducci",
     "description": "Débugage et optimisation",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-    "tags": ["HTML/CSS", "SEO"]
+    "tags": ["HTML/CSS", "SEO"],
+    "url": "https://thomas-ruch.github.io/Nina-Carducci-Dev/"
   },
   {
     "id": "004",

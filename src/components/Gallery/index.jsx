@@ -4,7 +4,7 @@ import projects from "../../datas/projects.json";
 function Gallery() {
   return (
     <ul className="gallery">
-      {projects.map(({ id, title, cover, description, tags }) => (
+      {projects.map(({ id, title, cover, description, tags, url }) => (
         <Card
           key={id}
           id={id}
@@ -12,6 +12,7 @@ function Gallery() {
           cover={cover}
           description={description}
           tags={tags}
+          url={url}
         />
       ))}
     </ul>
