@@ -5,6 +5,22 @@
   margin: auto;
 }
 
+#home-main {
+  margin: auto;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0;
+    &::after {
+      content: ".";
+      color: utils.$txt-light-bg;
+      font-weight: bold;
+    }
+  }
+}
+
 #home-title {
   height: 100vh;
   display: flex;
@@ -18,10 +34,9 @@
 }
 
 #home-gallery {
-  display: flex;
-  flex-direction: column;
-  @extend %flex-center;
-  margin-bottom: 50px;
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 20px;
   background-color: utils.$secondary-color;
 }
 
@@ -36,12 +51,13 @@
 #home-skills {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: utils.$secondary-color;
 
   .list-skills {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
   }
 }
 

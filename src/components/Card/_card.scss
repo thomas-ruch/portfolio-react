@@ -1,11 +1,10 @@
 @use "../../scss/utils";
 
 .card {
-  width: 45%;
+  width: 46%;
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  cursor: pointer;
 
   .card-infos {
     display: flex;
@@ -14,10 +13,12 @@
   }
 
   img {
-    width: 100%;
-    height: 100%;
+    //background-color: utils.$bg-light;
     object-fit: cover;
     border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    //@extend %shadow;
   }
 
   h3 {
@@ -36,13 +37,5 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
-}
-
-@media (max-width: utils.$small-screen-width) {
-  .card {
-    width: 100%;
-    height: 280px;
-    margin: 10px 0;
   }
 }

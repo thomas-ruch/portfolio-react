@@ -4,7 +4,6 @@
   align-items: center;
 }
 
-%shadowed-text {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+%shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }

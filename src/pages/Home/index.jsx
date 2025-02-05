@@ -4,7 +4,7 @@ import skills from "../../datas/skills.json";
 
 function Home() {
   return (
-    <div>
+    <div id="home-main">
       <section id="home-title">
         <div className="inner-section">
           <p>Thomas Ruch - Développeur front-end</p>

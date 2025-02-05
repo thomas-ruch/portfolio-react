@@ -3,38 +3,40 @@
     "id": "001",
     "title": "Booki",
     "description": "Front-end",
-    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+    "cover": "/images/fond_booki.png",
     "tags": ["HTML 5", "CSS 3"],
-    "url": "https://thomas-ruch.github.io/Projet-Booki/"
+    "url": "https://github.com/thomas-ruch/Projet-Booki"
   },
   {
     "id": "002",
     "title": "Sophie Bluel",
     "description": "Front-end",
-    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+    "cover": "/images/fond_bluel.png",
     "tags": ["HTML/CSS", "Javascript"],
-    "url": "https://thomas-ruch.github.io/Projet-3-Bluel/"
+    "url": "https://github.com/thomas-ruch/Projet-3-Bluel"
   },
   {
     "id": "003",
     "title": "Nina Carducci",
     "description": "Débugage et optimisation",
-    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+    "cover": "/images/fond_carducci.png",
     "tags": ["HTML/CSS", "SEO"],
-    "url": "https://thomas-ruch.github.io/Nina-Carducci-Dev/"
+    "url": "https://github.com/thomas-ruch/Nina-Carducci-Dev"
   },
   {
     "id": "004",
     "title": "Kasa",
     "description": "Front-end",
-    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-    "tags": ["React", "SASS"]
+    "cover": "/images/fond_kasa.png",
+    "tags": ["React", "SASS"],
+    "url": "https://github.com/thomas-ruch/p6-kasa"
   },
   {
     "id": "005",
     "title": "Mon vieux grimoire",
     "description": "Back-end",
-    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-    "tags": ["Node.js", "Express"]
+    "cover": "/images/fond_grimoire.png",
+    "tags": ["Node.js", "Express"],
+    "url": "https://github.com/thomas-ruch/p7-backend"
   }
 ]
