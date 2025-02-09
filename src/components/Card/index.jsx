@@ -8,12 +8,14 @@ function Card({
   cover,
   description,
   tags,
-  url,
-  difficulties,
+  urlGit,
+  urlSite,
+  issues,
+  solutions,
   skills,
 }) {
-  const openUrl = () => {
-    window.open(url, "_blank");
+  const openUrl = (link) => {
+    window.open(link, "_blank");
   };
 
   return (
@@ -23,11 +25,8 @@ function Card({
         <div className="card-infos">
           <div>
             <h3>{title}</h3>
-            <span>{subtitle}</span>
+            <span className="subtitle">{subtitle}</span>
           </div>
-          <button onClick={openUrl}>
-            <i className={"fa-brands fa-github fa-2x"}></i>
-          </button>
           <div className="card-tags">
             {tags.map((elem, index) => (
               <Tag key={index} tag={elem} />
@@ -37,9 +36,20 @@ function Card({
       </div>
       <div className="gradient"></div>
       <div className="card-right">
-        <p>{description}</p>
-        <DropBox title="Difficultés rencontrées" content={difficulties} />
-        <DropBox title="Compétences acquises" content={skills} />
+        {description.map((elem, index) => (
+          <p key={index}>{elem}</p>
+        ))}
+        <button title="Lien GitHub" onClick={() => openUrl(urlGit)}>
+          <i className={"fa-brands fa-github fa-2x"}></i>
+        </button>
+        {urlSite && (
+          <button title="Lien vers le site" onClick={() => openUrl(urlSite)}>
+            <i className="fa-solid fa-desktop fa-2x"></i>
+          </button>
+        )}
+        <DropBox title="Problématiques rencontrées" content={issues} />
+        <DropBox title="Solutions proposées" content={solutions} />
+        <DropBox title="Compétences développées" content={skills} />
       </div>
     </li>
   );

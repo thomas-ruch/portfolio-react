@@ -12,8 +12,10 @@ function Gallery() {
           cover,
           description,
           tags,
-          url,
-          difficulties,
+          urlGit,
+          urlSite,
+          issues,
+          solutions,
           skills,
         }) => (
           <Card
@@ -24,8 +26,10 @@ function Gallery() {
             cover={cover}
             description={description}
             tags={tags}
-            url={url}
-            difficulties={difficulties}
+            urlGit={urlGit}
+            urlSite={urlSite}
+            issues={issues}
+            solutions={solutions}
             skills={skills}
           />
         )

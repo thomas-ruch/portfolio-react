@@ -7,9 +7,36 @@ function Header() {
         <h1>Thomas Ruch</h1>
       </NavLink>
       <nav>
-        <NavLink to="/#home-gallery">Travaux</NavLink>
-        <NavLink to="/#home-about">A propos</NavLink>
-        <NavLink to="/#home-contact">Contact</NavLink>
+        <NavLink
+          to="#"
+          onClick={() =>
+            document
+              .getElementById("home-gallery")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Projets.
+        </NavLink>
+        <NavLink
+          to="#h"
+          onClick={() =>
+            document
+              .getElementById("home-about")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          A propos.
+        </NavLink>
+        <NavLink
+          to="#"
+          onClick={() =>
+            document
+              .getElementById("home-contact")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Contact.
+        </NavLink>
       </nav>
     </header>
   );

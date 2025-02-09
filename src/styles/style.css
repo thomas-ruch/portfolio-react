@@ -121,7 +121,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.2;
 }
 
 ol,
@@ -270,7 +270,7 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 50px 30px;
   align-items: center;
 }
@@ -294,6 +294,7 @@ section {
 
 #home-about {
   background-color: #e9d5a1;
+  font-size: 24px;
 }
 #home-about p {
   width: 80%;
@@ -316,14 +317,15 @@ section {
 }
 
 .tag {
-  font-size: 10px;
-  font-weight: 500;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
   text-align: center;
   color: black;
   background-color: #e9d5a1;
   margin-top: 3px;
   padding: 2px 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: default;
 }
 
@@ -341,32 +343,38 @@ section {
   border-radius: 20px;
 }
 .card .card-left {
-  width: 50%;
+  width: 45%;
   padding: 30px;
   border-radius: 20px 0 0 20px;
 }
 .card .card-right {
-  width: 50%;
+  width: 55%;
   padding: 30px;
   background-color: #e9d5a1;
   border-radius: 0 20px 20px 0;
+}
+.card .card-right p {
+  font-size: 18px;
 }
 .card .gradient {
   width: 100px;
   background: linear-gradient(to right, #f6f6f6, #e9d5a1);
 }
 .card button {
-  font-size: 16px;
-  font-weight: 600;
   border: 2px ridge black;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 20px;
+  padding: 5px 15px;
   cursor: pointer;
+  margin: 15px 0 10px 20px;
+  transition: all 0.2s ease-in-out;
+}
+.card button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 .card .card-infos {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  padding: 0 40px 0 20px;
 }
 .card img {
   width: 100%;
@@ -379,15 +387,17 @@ section {
   font-weight: 700;
   margin: 0;
 }
-.card span {
+.card .subtitle {
   font-size: 18px;
   font-weight: 500;
   color: black;
 }
 .card .card-tags {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .gallery {
@@ -426,11 +436,13 @@ section {
   justify-content: space-between;
   align-items: center;
   background-color: #e9d5a1;
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: 600;
+  border-bottom: 2px #f6f6f6 solid;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
+  margin-top: 10px;
   cursor: default;
 }
 .drop-title i {
@@ -449,7 +461,6 @@ section {
 .drop-txt .drop-txt-content {
   background-color: #e9d5a1;
   border-radius: 0 0 5px 5px;
-  margin-top: -5px;
   z-index: 0;
   overflow: hidden;
 }
@@ -457,10 +468,12 @@ section {
   display: block;
   padding: 20px;
 }
-.drop-txt ul {
-  list-style-type: none;
-  padding: 20px;
-  margin: 0;
+.drop-txt .drop-txt-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.drop-txt .drop-txt-content li {
+  margin: 10px;
 }
 
 .is-open {

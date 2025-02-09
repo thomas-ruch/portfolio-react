@@ -8,16 +8,20 @@
   @extend %large-shadow;
 
   .card-left {
-    width: 50%;
+    width: 45%;
     padding: 30px;
     border-radius: 20px 0 0 20px;
   }
 
   .card-right {
-    width: 50%;
+    width: 55%;
     padding: 30px;
     background-color: utils.$bg-light;
     border-radius: 0 20px 20px 0;
+
+    p {
+      font-size: 18px;
+    }
   }
 
   .gradient {
@@ -30,28 +34,29 @@
   }
 
   button {
-    font-size: 16px;
-    font-weight: 600;
     border: 2px ridge black;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 20px;
+    padding: 5px 15px;
     cursor: pointer;
+    margin: 15px 0 10px 20px;
     @extend %small-shadow;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
   }
 
   .card-infos {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px 0 20px;
+    padding: 0 40px 0 20px;
   }
 
   img {
-    //background-color: utils.$bg-light;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 5px;
-    //@extend %shadow;
   }
 
   h3 {
@@ -60,7 +65,7 @@
     margin: 0;
   }
 
-  span {
+  .subtitle {
     font-size: 18px;
     font-weight: 500;
     color: utils.$txt-light-bg;
@@ -68,7 +73,9 @@
 
   .card-tags {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
   }
 }

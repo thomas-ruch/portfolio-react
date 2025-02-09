@@ -1,14 +1,16 @@
 @use "../../scss/utils";
 
 .tag {
-  font-size: 10px;
-  font-weight: 500;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
   text-align: center;
   color: utils.$txt-light-bg;
   background-color: utils.$main-color;
   margin-top: 3px;
   padding: 2px 10px;
-  border-radius: 15px;
+  //height: 16px;
+  border-radius: 10px;
   cursor: default;
   @extend %small-shadow;
 }

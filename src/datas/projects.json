@@ -4,57 +4,103 @@
     "title": "Booki",
     "subtitle": "Front-end",
     "cover": "/images/fond_booki.png",
-    "description": "Booki est un site de réservation de logements. Le but du projet était de développer une nouvelle interface en HTML / CSS.",
-    "difficulties": ["Respect de la maquette", "Appropriation du langage HTML"],
+    "description": [
+      "Booki est une agence de voyage. La start-up souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+      "L'objectif du projet était d'intégrer l'interface du site avec du code HTML et CSS."
+    ],
+    "issues": [
+      "Assurer une conformité stricte du site à la maquette",
+      "Développer, à partir de la version desktop, une version mobile du site"
+    ],
+    "solutions": [
+      "Effectuer un découpage précis de la maquette avant le codage HTML/CSS",
+      "Le découpage permet également, à l'aide de media queries, de développer efficacement et rapidement la version mobile"
+    ],
     "skills": [
       "Intégrer du contenu conformément à une maquette avec HTML et CSS",
-      "Implémenter une interface responsive avec HTML et CSS"
+      "Implémenter une interface responsive avec HTML et CSS",
+      "Organiser et gérer les modifications du code avec Git et GitHub"
     ],
     "tags": ["HTML 5", "CSS 3"],
-    "url": "https://github.com/thomas-ruch/Projet-Booki"
+    "urlGit": "https://github.com/thomas-ruch/Projet-Booki",
+    "urlSite": "https://thomas-ruch.github.io/Projet-Booki/"
   },
   {
     "id": "002",
     "title": "Sophie Bluel",
     "subtitle": "Front-end",
     "cover": "/images/fond_bluel.png",
-    "description": "Sophie Bluel est architecte et souhaitait la mise en place d'un portfolio en ligne pour présenter ses travaux",
-    "difficulties": ["Coder la gestion de tokens d'authentification"],
+    "description": [
+      "Sophie Bluel est architecte et souhaitait la mise en place d'un portfolio en ligne pour présenter ses travaux.",
+      "L'objectif du projet était le développement de la page de présentation des travaux ainsi que la totalité de l'interface administrateur"
+    ],
+    "issues": [
+      "Appréhendez la gestion de l'authentification et les appels à l'API"
+    ],
+    "solutions": [],
     "skills": [
       "Manipuler des éléments du DOM et gérer les événements utilisateurs avec Javascript",
       "Récupérer des données utilisateurs via formulaires"
     ],
     "tags": ["HTML/CSS", "Javascript"],
-    "url": "https://github.com/thomas-ruch/Projet-3-Bluel"
+    "urlGit": "https://github.com/thomas-ruch/Projet-3-Bluel"
   },
   {
     "id": "003",
     "title": "Nina Carducci",
     "subtitle": "Débugage et optimisation",
     "cover": "/images/fond_carducci.png",
-    "difficulties": [""],
-    "skills": [""],
+    "description": [
+      "Nina Carducci est photographe. Son site contenait des bugs, la navigation était peu fluide et son référencement inexistant.",
+      "L'objectif du projet était de procéder à une optimisation de l'ensemble du site sur le plan technique, du référencement et de l'accessibilité"
+    ],
+    "issues": [
+      "Identifier les points à optimiser",
+      "Améliorer l'accessibilité du site"
+    ],
+    "solutions": [
+      "Utiliser des outils comme Lighthouse ou Wave pour cibler les points à améliorer",
+      "Identifier les bonnes pratiques de codage (balises et hiérarchisation sémantiques, attributs spécifiques, contraste) pour améliorer l'accessibilité"
+    ],
+    "skills": [
+      "Optimiser les performances d’un site web",
+      "Débugger un site web grâce aux Chrome DevTools"
+    ],
     "tags": ["HTML/CSS", "SEO"],
-    "url": "https://github.com/thomas-ruch/Nina-Carducci-Dev"
+    "urlGit": "https://github.com/thomas-ruch/Nina-Carducci-Dev",
+    "urlSite": "https://thomas-ruch.github.io/Nina-Carducci-Dev/"
   },
   {
     "id": "004",
     "title": "Kasa",
     "subtitle": "Front-end",
     "cover": "/images/fond_kasa.png",
-    "difficulties": [""],
-    "skills": [""],
+    "description": [""],
+    "issues": [""],
+    "solutions": [],
+    "skills": [
+      "Configurer la navigation entre les pages de l'application avec React Router",
+      "Initialiser une application avec Create React App",
+      "Développer des éléments de l'interface d'un site web grâce à des composants React"
+    ],
     "tags": ["React", "SASS"],
-    "url": "https://github.com/thomas-ruch/p6-kasa"
+    "urlGit": "https://github.com/thomas-ruch/p6-kasa",
+    "urlSite": "https://thomas-ruch.github.io/p6-kasa-build/"
   },
   {
     "id": "005",
     "title": "Mon vieux grimoire",
     "subtitle": "Back-end",
     "cover": "/images/fond_grimoire.png",
-    "difficulties": [""],
-    "skills": [""],
-    "tags": ["Node.js", "Express"],
-    "url": "https://github.com/thomas-ruch/p7-backend"
+    "description": [""],
+    "issues": [""],
+    "solutions": [],
+    "skills": [
+      "Implémenter un modèle logique de données conformément à la réglementation",
+      "Mettre en œuvre des opérations CRUD de manière sécurisée",
+      "Stocker des données de manière sécurisée"
+    ],
+    "tags": ["Node.js", "Express", "MongoDB"],
+    "urlGit": "https://github.com/thomas-ruch/p7-backend"
   }
 ]
