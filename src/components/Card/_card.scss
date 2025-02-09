@@ -1,22 +1,55 @@
 @use "../../scss/utils";
 
 .card {
-  width: 46%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  margin: 20px 0;
+  margin: 50px 0;
+  border-radius: 20px;
+  @extend %large-shadow;
+
+  .card-left {
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .card-right {
+    width: 50%;
+    padding: 30px;
+    background-color: utils.$bg-light;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .gradient {
+    width: 100px;
+    background: linear-gradient(
+      to right,
+      utils.$secondary-color,
+      utils.$bg-light
+    );
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px ridge black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    @extend %small-shadow;
+  }
 
   .card-infos {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    padding: 0 20px 0 20px;
   }
 
   img {
     //background-color: utils.$bg-light;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    padding: 10px;
     margin-bottom: 5px;
     //@extend %shadow;
   }

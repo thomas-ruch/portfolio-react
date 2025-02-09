@@ -2,11 +2,9 @@
 
 .gallery {
   display: flex;
+  flex-direction: column;
   width: 100%;
   list-style-type: none;
-  padding: 0px;
-  flex-wrap: wrap;
-  justify-content: space-around;
   background-color: utils.$secondary-color;
 }
 

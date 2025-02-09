@@ -4,8 +4,12 @@ footer {
   align-items: center;
 }
 
-.skill, .tag {
+.skill, .card button, .tag {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  box-shadow: 10px 15px 25px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -143,10 +147,6 @@ table {
   border-spacing: 0;
 }
 
-html {
-  margin: 0;
-}
-
 body {
   height: 100%;
   font-family: "Noto Sans", sans-serif;
@@ -202,6 +202,7 @@ header {
   background-color: black;
   color: white;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -243,24 +244,35 @@ header nav {
     text-transform: uppercase;
   }
 }
-.inner-section {
-  max-width: 1600px;
-  margin: auto;
-}
-
 #home-main {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 #home-main h2 {
+  width: 100%;
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 15px 0;
+  padding-left: 5%;
 }
 #home-main h2::after {
   content: ".";
-  color: black;
-  font-weight: bold;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.inner-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  margin: 50px 30px;
+  align-items: center;
 }
 
 #home-title {
@@ -275,7 +287,6 @@ header nav {
 }
 
 #home-gallery {
-  width: 100%;
   margin-top: 50px;
   padding-top: 20px;
   background-color: #f6f6f6;
@@ -285,23 +296,23 @@ header nav {
   background-color: #e9d5a1;
 }
 #home-about p {
-  width: 60%;
+  width: 80%;
+  line-height: 1.5em;
 }
 
 #home-skills {
-  display: flex;
-  flex-direction: column;
-  background-color: #f6f6f6;
+  background-color: #e9d5a1;
+  align-items: self-start;
 }
 #home-skills .list-skills {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  gap: 60px;
   margin: 20px;
+  margin-top: 60px;
 }
 
 #home-contact {
-  background-color: #e9d5a1;
+  background-color: #f6f6f6;
 }
 
 .tag {
@@ -324,20 +335,43 @@ header nav {
   }
 }
 .card {
-  width: 46%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  margin: 20px 0;
+  margin: 50px 0;
+  border-radius: 20px;
+}
+.card .card-left {
+  width: 50%;
+  padding: 30px;
+  border-radius: 20px 0 0 20px;
+}
+.card .card-right {
+  width: 50%;
+  padding: 30px;
+  background-color: #e9d5a1;
+  border-radius: 0 20px 20px 0;
+}
+.card .gradient {
+  width: 100px;
+  background: linear-gradient(to right, #f6f6f6, #e9d5a1);
+}
+.card button {
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px ridge black;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
 .card .card-infos {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  padding: 0 20px 0 20px;
 }
 .card img {
+  width: 100%;
   object-fit: cover;
   border-radius: 10px;
-  padding: 10px;
   margin-bottom: 5px;
 }
 .card h3 {
@@ -358,11 +392,9 @@ header nav {
 
 .gallery {
   display: flex;
+  flex-direction: column;
   width: 100%;
   list-style-type: none;
-  padding: 0px;
-  flex-wrap: wrap;
-  justify-content: space-around;
   background-color: #f6f6f6;
 }
 
@@ -379,8 +411,74 @@ header nav {
 .skill {
   display: flex;
   flex-direction: column;
-  background-color: #e9d5a1;
+  background-color: #f6f6f6;
   padding: 10px;
   border-radius: 15px;
   align-items: center;
+}
+
+.drop-box {
+  width: 100%;
+}
+
+.drop-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9d5a1;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: default;
+}
+.drop-title i {
+  transition: transform 0.3s ease;
+  color: black;
+  cursor: pointer;
+}
+
+.drop-txt {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease-in-out;
+  font-size: 18px;
+  font-weight: 400;
+}
+.drop-txt .drop-txt-content {
+  background-color: #e9d5a1;
+  border-radius: 0 0 5px 5px;
+  margin-top: -5px;
+  z-index: 0;
+  overflow: hidden;
+}
+.drop-txt .drop-txt-content span {
+  display: block;
+  padding: 20px;
+}
+.drop-txt ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.is-open {
+  grid-template-rows: 1fr;
+}
+
+.rotated {
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 768px) {
+  .drop-title {
+    font-size: 16px;
+  }
+  .drop-title i {
+    height: 13px;
+  }
+  .drop-txt {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

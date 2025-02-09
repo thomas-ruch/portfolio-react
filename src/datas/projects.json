@@ -2,40 +2,58 @@
   {
     "id": "001",
     "title": "Booki",
-    "description": "Front-end",
+    "subtitle": "Front-end",
     "cover": "/images/fond_booki.png",
+    "description": "Booki est un site de réservation de logements. Le but du projet était de développer une nouvelle interface en HTML / CSS.",
+    "difficulties": ["Respect de la maquette", "Appropriation du langage HTML"],
+    "skills": [
+      "Intégrer du contenu conformément à une maquette avec HTML et CSS",
+      "Implémenter une interface responsive avec HTML et CSS"
+    ],
     "tags": ["HTML 5", "CSS 3"],
     "url": "https://github.com/thomas-ruch/Projet-Booki"
   },
   {
     "id": "002",
     "title": "Sophie Bluel",
-    "description": "Front-end",
+    "subtitle": "Front-end",
     "cover": "/images/fond_bluel.png",
+    "description": "Sophie Bluel est architecte et souhaitait la mise en place d'un portfolio en ligne pour présenter ses travaux",
+    "difficulties": ["Coder la gestion de tokens d'authentification"],
+    "skills": [
+      "Manipuler des éléments du DOM et gérer les événements utilisateurs avec Javascript",
+      "Récupérer des données utilisateurs via formulaires"
+    ],
     "tags": ["HTML/CSS", "Javascript"],
     "url": "https://github.com/thomas-ruch/Projet-3-Bluel"
   },
   {
     "id": "003",
     "title": "Nina Carducci",
-    "description": "Débugage et optimisation",
+    "subtitle": "Débugage et optimisation",
     "cover": "/images/fond_carducci.png",
+    "difficulties": [""],
+    "skills": [""],
     "tags": ["HTML/CSS", "SEO"],
     "url": "https://github.com/thomas-ruch/Nina-Carducci-Dev"
   },
   {
     "id": "004",
     "title": "Kasa",
-    "description": "Front-end",
+    "subtitle": "Front-end",
     "cover": "/images/fond_kasa.png",
+    "difficulties": [""],
+    "skills": [""],
     "tags": ["React", "SASS"],
     "url": "https://github.com/thomas-ruch/p6-kasa"
   },
   {
     "id": "005",
     "title": "Mon vieux grimoire",
-    "description": "Back-end",
+    "subtitle": "Back-end",
     "cover": "/images/fond_grimoire.png",
+    "difficulties": [""],
+    "skills": [""],
     "tags": ["Node.js", "Express"],
     "url": "https://github.com/thomas-ruch/p7-backend"
   }

@@ -1,0 +1,73 @@
+@use "../../scss/utils";
+
+.drop-box {
+  width: 100%;
+}
+
+.drop-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: utils.$main-color;
+  color: utils.$txt-dark-bg;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: default;
+
+  i {
+    transition: transform 0.3s ease;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.drop-txt {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease-in-out;
+  font-size: 18px;
+  font-weight: 400;
+
+  .drop-txt-content {
+    background-color: utils.$main-color;
+    border-radius: 0 0 5px 5px;
+    margin-top: -5px;
+    z-index: 0;
+    overflow: hidden;
+
+    span {
+      display: block;
+      padding: 20px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+.is-open {
+  grid-template-rows: 1fr;
+}
+
+.rotated {
+  transform: rotate(-180deg);
+}
+
+@media (max-width: utils.$small-screen-width) {
+  .drop-title {
+    font-size: 16px;
+
+    i {
+      height: 13px;
+    }
+  }
+
+  .drop-txt {
+    font-size: 14px;
+  }
+}

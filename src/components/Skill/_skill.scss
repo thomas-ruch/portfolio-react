@@ -3,9 +3,9 @@
 .skill {
   display: flex;
   flex-direction: column;
-  background-color: utils.$main-color;
+  background-color: utils.$secondary-color;
   padding: 10px;
   border-radius: 15px;
   align-items: center;
-  @extend %shadow;
+  @extend %small-shadow;
 }
