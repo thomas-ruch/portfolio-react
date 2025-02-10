@@ -1,11 +1,13 @@
 import Tag from "../Tag";
 import DropBox from "../DropBox";
+import FeatureBadge from "../FeatureBadge";
 
 function Card({
   id,
   title,
   subtitle,
   cover,
+  coverSmall,
   description,
   tags,
   urlGit,
@@ -14,17 +16,13 @@ function Card({
   solutions,
   skills,
 }) {
-  const openUrl = (link) => {
-    window.open(link, "_blank");
-  };
-
   return (
     <li className="card">
       <div className="card-left">
         <img src={cover} alt={`${title} cover`} />
         <div className="card-infos">
           <div>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <span className="subtitle">{subtitle}</span>
           </div>
           <div className="card-tags">
@@ -39,15 +37,13 @@ function Card({
         {description.map((elem, index) => (
           <p key={index}>{elem}</p>
         ))}
-        <button title="Lien GitHub" onClick={() => openUrl(urlGit)}>
-          <i className={"fa-brands fa-github fa-2x"}></i>
-        </button>
-        {urlSite && (
-          <button title="Lien vers le site" onClick={() => openUrl(urlSite)}>
-            <i className="fa-solid fa-desktop fa-2x"></i>
-          </button>
-        )}
-        <DropBox title="Problématiques rencontrées" content={issues} />
+        <div className="card-links">
+          <FeatureBadge fa_icon="fa-brands fa-github fa-2x" link={urlGit} />
+          {urlSite && (
+            <FeatureBadge fa_icon="fa-solid fa-desktop fa-2x" link={urlSite} />
+          )}
+        </div>
+        <DropBox title="Problématiques du projet" content={issues} />
         <DropBox title="Solutions proposées" content={solutions} />
         <DropBox title="Compétences développées" content={skills} />
       </div>

@@ -1,9 +1,11 @@
 [
   {
     "id": "001",
+    "visible": true,
     "title": "Booki",
     "subtitle": "Front-end",
-    "cover": "/images/fond_booki.png",
+    "cover": "/images/fond_booki.webp",
+    "coverSmall": "/images/booki.webp",
     "description": [
       "Booki est une agence de voyage. La start-up souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
       "L'objectif du projet était d'intégrer l'interface du site avec du code HTML et CSS."
@@ -27,9 +29,11 @@
   },
   {
     "id": "002",
+    "visible": false,
     "title": "Sophie Bluel",
     "subtitle": "Front-end",
-    "cover": "/images/fond_bluel.png",
+    "cover": "/images/fond_bluel.webp",
+    "coverSmall": "/images/bluel.webp",
     "description": [
       "Sophie Bluel est architecte et souhaitait la mise en place d'un portfolio en ligne pour présenter ses travaux.",
       "L'objectif du projet était le développement de la page de présentation des travaux ainsi que la totalité de l'interface administrateur"
@@ -47,9 +51,11 @@
   },
   {
     "id": "003",
+    "visible": true,
     "title": "Nina Carducci",
     "subtitle": "Débugage et optimisation",
-    "cover": "/images/fond_carducci.png",
+    "cover": "/images/fond_carducci.webp",
+    "coverSmall": "/images/carducci.webp",
     "description": [
       "Nina Carducci est photographe. Son site contenait des bugs, la navigation était peu fluide et son référencement inexistant.",
       "L'objectif du projet était de procéder à une optimisation de l'ensemble du site sur le plan technique, du référencement et de l'accessibilité"
@@ -73,8 +79,10 @@
   {
     "id": "004",
     "title": "Kasa",
+    "visible": false,
     "subtitle": "Front-end",
-    "cover": "/images/fond_kasa.png",
+    "cover": "/images/fond_kasa.webp",
+    "coverSmall": "/images/kasa.webp",
     "description": [""],
     "issues": [""],
     "solutions": [],
@@ -89,9 +97,11 @@
   },
   {
     "id": "005",
+    "visible": true,
     "title": "Mon vieux grimoire",
     "subtitle": "Back-end",
-    "cover": "/images/fond_grimoire.png",
+    "cover": "/images/fond_grimoire.webp",
+    "coverSmall": "/images/grimoire.webp",
     "description": [""],
     "issues": [""],
     "solutions": [],

@@ -2,9 +2,10 @@ import Card from "../Card";
 import projects from "../../datas/projects.json";
 
 function Gallery() {
+  const visibleProjects = projects.filter((project) => project.visible);
   return (
     <ul className="gallery">
-      {projects.map(
+      {visibleProjects.map(
         ({
           id,
           title,
@@ -20,7 +21,6 @@ function Gallery() {
         }) => (
           <Card
             key={id}
-            id={id}
             title={title}
             subtitle={subtitle}
             cover={cover}

@@ -4,9 +4,19 @@ function Header() {
   return (
     <header>
       <NavLink to="/">
-        <h1>Thomas Ruch</h1>
+        <p>TR</p>
       </NavLink>
       <nav>
+        <NavLink
+          to="#"
+          onClick={() =>
+            document
+              .getElementById("home-title")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Accueil
+        </NavLink>
         <NavLink
           to="#"
           onClick={() =>
@@ -15,7 +25,7 @@ function Header() {
               .scrollIntoView({ behavior: "smooth" })
           }
         >
-          Projets.
+          Projets
         </NavLink>
         <NavLink
           to="#h"
@@ -25,17 +35,7 @@ function Header() {
               .scrollIntoView({ behavior: "smooth" })
           }
         >
-          A propos.
-        </NavLink>
-        <NavLink
-          to="#"
-          onClick={() =>
-            document
-              .getElementById("home-contact")
-              .scrollIntoView({ behavior: "smooth" })
-          }
-        >
-          Contact.
+          A propos
         </NavLink>
       </nav>
     </header>

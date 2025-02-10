@@ -1,19 +1,17 @@
 @use "../../scss/utils";
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   background-color: utils.$bg-dark;
-  color: utils.$txt-dark-bg;
+  color: utils.$txt-bg-dark;
   position: fixed;
   z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px;
+  padding: 15px 0;
 
-  h1 {
-    font-size: 16px;
+  p {
+    font-size: 20px;
     font-weight: 700;
     font-style: italic;
   }
@@ -22,11 +20,11 @@ header {
     text-decoration: none;
     font-size: 16px;
     font-weight: 550;
-    color: utils.$txt-dark-bg;
+    color: utils.$txt-bg-dark;
   }
 
   a:visited {
-    color: utils.$txt-dark-bg;
+    color: utils.$txt-bg-dark;
   }
 
   nav {
@@ -40,10 +38,6 @@ header {
 @media (max-width: utils.$small-screen-width) {
   header {
     margin-bottom: 10px;
-
-    img {
-      height: 50px;
-    }
 
     nav {
       gap: 15px;

@@ -4,16 +4,12 @@
   display: flex;
   flex-direction: column;
 
-  h2 {
+  h3 {
     width: 100%;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
     margin: 15px 0;
-    padding-left: 5%;
-    &::after {
-      content: ".";
-    }
   }
 }
 
@@ -32,46 +28,167 @@ section {
   align-items: center;
 }
 
+@media (max-width: utils.$small-screen-width) {
+  .inner-section {
+    margin: 15px;
+  }
+}
+
+//---------Home-title------
+
 #home-title {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: utils.$bg-main;
 
-  p {
-    font-size: 30px;
-    font-weight: 900;
+  .title-perso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+
+    .title-portrait {
+      width: 350px;
+      height: 350px;
+      border: 5px solid utils.$secondary-color;
+      border-radius: 50%;
+      object-fit: contain;
+      background-color: utils.$icon-color;
+    }
+
+    .title-infos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 5px 0 15px 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: utils.$txt-bg-main;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin: 10px 0;
+
+        i {
+          margin-right: 10px;
+          color: utils.$icon-color;
+        }
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 25px;
+      }
+    }
   }
 }
 
-#home-gallery {
-  margin-top: 50px;
-  padding-top: 20px;
-  background-color: utils.$secondary-color;
+@media (max-width: utils.$small-screen-width) {
+  #home-title {
+    .title-perso {
+      flex-direction: column;
+      margin-top: 30px;
+      padding: 0;
+      gap: 5px;
+
+      .title-portrait {
+        width: 250px;
+        height: 250px;
+      }
+
+      .title-infos {
+        h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 36px;
+        }
+
+        h2 {
+          width: 100%;
+          text-align: center;
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .social-links {
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
 }
 
+//---------Home-gallery------
+
+#home-gallery {
+  background-color: utils.$bg-secondary;
+}
+
+//---------Home-about & Home-skills------
+
 #home-about {
-  background-color: utils.$main-color;
+  background-color: utils.$bg-main;
   font-size: 24px;
 
   p {
     width: 80%;
-    line-height: 1.5em;
+    line-height: 1.5rem;
   }
 }
 
 #home-skills {
-  background-color: utils.$main-color;
+  background-color: utils.$bg-main;
   align-items: self-start;
 
   .list-skills {
     display: flex;
-    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
     margin: 20px;
     margin-top: 60px;
   }
 }
 
-#home-contact {
-  background-color: utils.$secondary-color;
+@media (max-width: utils.$small-screen-width) {
+  #home-about {
+    font-size: 18px;
+
+    p {
+      line-height: 1.4rem;
+    }
+  }
+
+  #home-skills {
+    .list-skills {
+      margin-top: 15px;
+      gap: 25px;
+    }
+  }
 }

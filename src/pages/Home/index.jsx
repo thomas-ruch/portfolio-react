@@ -1,24 +1,52 @@
 import Gallery from "../../components/Gallery";
-import Skill from "../../components/Skill";
+import FeatureBadge from "../../components/FeatureBadge";
 import skills from "../../datas/skills.json";
+import portrait from "../../assets/portrait.webp";
 
 function Home() {
   return (
     <div id="home-main">
       <section id="home-title">
         <div className="inner-section">
-          <p>Thomas Ruch - Développeur front-end</p>
+          <section className="title-perso">
+            <img src={portrait} alt="Thomas Ruch" className="title-portrait" />
+            <div className="title-infos">
+              <h1>Thomas Ruch</h1>
+              <h2>Développeur Frontend</h2>
+              <p>
+                <i class="fa-solid fa-location-pin fa-lg"></i> Basé en Alsace.
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope fa-lg"></i>{" "}
+                <a href="mailto:thomasruch@free.fr">thomasruch@free.fr</a>
+              </p>
+              <p>
+                <i class="fa-solid fa-dice-d6 fa-lg"></i> Code et meeples, même
+                passion.
+              </p>
+              <div class="social-links">
+                <FeatureBadge
+                  fa_icon="fa-brands fa-github fa-2x"
+                  link="https://github.com/thomas-ruch"
+                />
+                <FeatureBadge
+                  fa_icon="fa-brands fa-linkedin fa-2x"
+                  link="https://www.linkedin.com/in/thomas-ruch-51a540316/"
+                />
+              </div>
+            </div>
+          </section>
         </div>
       </section>
       <section id="home-gallery">
         <div className="inner-section">
-          <h2>Projets</h2>
+          <h3>Projets</h3>
           <Gallery />
         </div>
       </section>
       <section id="home-about">
         <div className="inner-section">
-          <h2>A propos</h2>
+          <h3>A propos</h3>
           <p>
             Développeur web passionné et engagé, je viens de terminer une
             formation qui m'a permis d'acquérir des compétences en développement
@@ -34,17 +62,12 @@ function Home() {
       </section>
       <section id="home-skills">
         <div className="inner-section">
-          <h2>Compétences</h2>
+          <h3>Compétences</h3>
           <div className="list-skills">
             {skills.map(({ id, title, fa_icon }) => (
-              <Skill key={id} title={title} fa_icon={fa_icon} />
+              <FeatureBadge key={id} title={title} fa_icon={fa_icon} />
             ))}
           </div>
-        </div>
-      </section>
-      <section id="home-contact">
-        <div className="inner-section">
-          <h2>Contact</h2>
         </div>
       </section>
     </div>

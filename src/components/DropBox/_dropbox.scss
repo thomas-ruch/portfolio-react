@@ -1,15 +1,15 @@
 @use "../../scss/utils";
 
 .drop-box {
-  width: 100%;
+  //width: 100%;
 }
 
 .drop-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: utils.$main-color;
-  color: utils.$txt-light-bg;
+  background-color: utils.$bg-main;
+  color: utils.$txt-bg-main;
   font-size: 20px;
   font-weight: 600;
   border-bottom: 2px utils.$secondary-color solid;
@@ -20,7 +20,7 @@
 
   i {
     transition: transform 0.3s ease;
-    color: black;
+    color: utils.$txt-bg-main;
     cursor: pointer;
   }
 }
@@ -33,7 +33,8 @@
   font-weight: 400;
 
   .drop-txt-content {
-    background-color: utils.$bg-light;
+    background-color: utils.$bg-main;
+    color: utils.$txt-bg-main;
     border-radius: 0 0 5px 5px;
     z-index: 0;
     overflow: hidden;
@@ -64,14 +65,14 @@
 
 @media (max-width: utils.$small-screen-width) {
   .drop-title {
-    font-size: 16px;
+    font-size: 18px;
 
     i {
-      height: 13px;
+      height: 14px;
     }
   }
 
   .drop-txt {
-    font-size: 14px;
+    font-size: 16px;
   }
 }

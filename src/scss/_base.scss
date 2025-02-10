@@ -85,7 +85,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+root {
   margin: 0;
   padding: 0;
   border: 0;
@@ -136,10 +137,8 @@ body {
   height: 100%;
   font-family: "Noto Sans", sans-serif;
   font-size: 20px;
-  background-color: utils.$bg-light;
-}
-
-#root {
+  background-color: utils.$bg-main;
+  color: utils.$txt-bg-main;
 }
 
 #main-container {
@@ -153,4 +152,7 @@ main {
 
 .conditionnal-break {
   display: none;
+}
+
+@media (max-width: utils.$small-screen-width) {
 }

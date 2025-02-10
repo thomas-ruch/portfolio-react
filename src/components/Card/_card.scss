@@ -16,38 +16,29 @@
   .card-right {
     width: 55%;
     padding: 30px;
-    background-color: utils.$bg-light;
+    background-color: utils.$bg-main;
     border-radius: 0 20px 20px 0;
 
     p {
       font-size: 18px;
+      color: utils.$txt-bg-main;
+    }
+
+    .card-links {
+      display: flex;
+      margin: 20px;
+      gap: 30px;
     }
   }
 
   .gradient {
     width: 100px;
-    background: linear-gradient(
-      to right,
-      utils.$secondary-color,
-      utils.$bg-light
-    );
-  }
-
-  button {
-    border: 2px ridge black;
-    border-radius: 20px;
-    padding: 5px 15px;
-    cursor: pointer;
-    margin: 15px 0 10px 20px;
-    @extend %small-shadow;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-    }
+    background: linear-gradient(to right, utils.$bg-secondary, utils.$bg-main);
   }
 
   .card-infos {
     display: flex;
+    color: utils.$txt-bg-secondary;
     justify-content: space-between;
     padding: 0 40px 0 20px;
   }
@@ -59,23 +50,70 @@
     margin-bottom: 5px;
   }
 
-  h3 {
+  h4 {
     font-size: 24px;
     font-weight: 700;
     margin: 0;
+    padding: 0;
   }
 
   .subtitle {
     font-size: 18px;
     font-weight: 500;
-    color: utils.$txt-light-bg;
   }
 
   .card-tags {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
+    justify-content: flex-end;
+    align-items: self-start;
     gap: 10px;
+  }
+}
+
+@media (max-width: utils.$small-screen-width) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    box-shadow: none;
+    margin: 0;
+
+    .card-left {
+      width: 100%;
+      padding: 5px;
+      border-radius: 10px 10px 0 0;
+      border: 4px solid utils.$main-color;
+    }
+
+    .card-right {
+      width: 100%;
+      padding: 9px;
+      border-radius: 0 0 10px 10px;
+
+      p {
+        font-size: 16px;
+      }
+
+      .card-links {
+        justify-content: center;
+      }
+    }
+
+    .gradient {
+      display: none;
+    }
+
+    .card-infos {
+      padding: 0 5px 0 5px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+    }
   }
 }

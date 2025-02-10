@@ -1,10 +1,10 @@
 @use "../../scss/utils";
 
 footer {
-  @extend %flex-center;
+  display: flex;
   flex-direction: column;
   background-color: utils.$bg-dark;
-  color: utils.$txt-dark-bg;
+  color: utils.$txt-bg-dark;
   padding: 70px 0 30px;
   cursor: default;
 
@@ -15,6 +15,7 @@ footer {
 }
 
 .footer-legal-notice {
+  text-align: center;
   font-size: 20px;
 }
 
