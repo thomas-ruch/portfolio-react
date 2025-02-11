@@ -1,6 +1,7 @@
 import Gallery from "../../components/Gallery";
 import FeatureBadge from "../../components/FeatureBadge";
 import skills from "../../datas/skills.json";
+import portraitWB from "../../assets/portraitWB.png";
 import portrait from "../../assets/portrait.webp";
 
 function Home() {
@@ -9,7 +10,18 @@ function Home() {
       <section id="home-title">
         <div className="inner-section">
           <section className="title-perso">
-            <img src={portrait} alt="Thomas Ruch" className="title-portrait" />
+            <div className="portrait-container">
+              <img
+                src={portraitWB}
+                alt="Thomas Ruch (dessin)"
+                className="title-portrait"
+              />
+              <img
+                src={portrait}
+                alt="Thomas Ruch (photo)"
+                className="title-portrait invisible"
+              />
+            </div>
             <div className="title-infos">
               <h1>Thomas Ruch</h1>
               <h2>Développeur Frontend</h2>

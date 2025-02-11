@@ -2,10 +2,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-legal-notice">
-        <span>
-          © 2025 Thomas Ruch. All <br className="conditionnal-break" />
-          rights reserved
-        </span>
+        <span>© 2025 Thomas Ruch.</span>
       </div>
     </footer>
   );

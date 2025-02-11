@@ -48,16 +48,39 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
     padding: 20px;
 
     .title-portrait {
+      position: absolute;
       width: 350px;
       height: 350px;
       border: 5px solid utils.$secondary-color;
       border-radius: 50%;
       object-fit: contain;
+      transition: opacity 0.5s ease-in-out;
       background-color: utils.$icon-color;
+
+      &.invisible {
+        opacity: 0;
+      }
+    }
+
+    .portrait-container {
+      position: relative;
+      display: inline-block;
+      border-radius: 50%;
+      width: 350px;
+      height: 350px;
+
+      &:hover {
+        .title-portrait {
+          opacity: 0;
+        }
+        .title-portrait.invisible {
+          opacity: 1;
+        }
+      }
     }
 
     .title-infos {
@@ -111,11 +134,16 @@ section {
       flex-direction: column;
       margin-top: 30px;
       padding: 0;
-      gap: 5px;
+      gap: 25px;
 
       .title-portrait {
         width: 250px;
         height: 250px;
+      }
+
+      .portrait-container {
+        height: 250px;
+        width: 250px;
       }
 
       .title-infos {

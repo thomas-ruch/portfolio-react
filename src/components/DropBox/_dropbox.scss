@@ -1,9 +1,5 @@
 @use "../../scss/utils";
 
-.drop-box {
-  //width: 100%;
-}
-
 .drop-title {
   display: flex;
   justify-content: space-between;
@@ -16,12 +12,11 @@
   border-radius: 5px;
   padding: 5px;
   margin-top: 10px;
-  cursor: default;
+  cursor: pointer;
 
   i {
     transition: transform 0.3s ease;
     color: utils.$txt-bg-main;
-    cursor: pointer;
   }
 }
 

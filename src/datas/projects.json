@@ -8,7 +8,7 @@
     "coverSmall": "/images/booki.webp",
     "description": [
       "Booki est une agence de voyage. La start-up souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
-      "L'objectif du projet était d'intégrer l'interface du site avec du code HTML et CSS."
+      "L'objectif du projet était d'intégrer l'interface du site avec en utilisant HTML et CSS."
     ],
     "issues": [
       "Assurer une conformité stricte du site à la maquette",
@@ -39,7 +39,7 @@
       "L'objectif du projet était le développement de la page de présentation des travaux ainsi que la totalité de l'interface administrateur"
     ],
     "issues": [
-      "Appréhendez la gestion de l'authentification et les appels à l'API"
+      "Appréhender la gestion de l'authentification et les appels à l'API"
     ],
     "solutions": [],
     "skills": [
@@ -57,7 +57,7 @@
     "cover": "/images/fond_carducci.webp",
     "coverSmall": "/images/carducci.webp",
     "description": [
-      "Nina Carducci est photographe. Son site contenait des bugs, la navigation était peu fluide et son référencement inexistant.",
+      "Nina Carducci est photographe. Son site contenait des bugs, la navigation était peu fluide et le site n'était pas référencé.",
       "L'objectif du projet était de procéder à une optimisation de l'ensemble du site sur le plan technique, du référencement et de l'accessibilité"
     ],
     "issues": [
@@ -65,12 +65,13 @@
       "Améliorer l'accessibilité du site"
     ],
     "solutions": [
-      "Utiliser des outils comme Lighthouse ou Wave pour cibler les points à améliorer",
+      "Utiliser des outils comme Lighthouse et Wave pour cibler les points à améliorer",
       "Identifier les bonnes pratiques de codage (balises et hiérarchisation sémantiques, attributs spécifiques, contraste) pour améliorer l'accessibilité"
     ],
     "skills": [
       "Optimiser les performances d’un site web",
-      "Débugger un site web grâce aux Chrome DevTools"
+      "Débugger un site web grâce aux Chrome DevTools",
+      "Adopter de bonnes pratiques pour la gestion du code et la mise en place de tests de performance"
     ],
     "tags": ["HTML/CSS", "SEO"],
     "urlGit": "https://github.com/thomas-ruch/Nina-Carducci-Dev",
@@ -79,13 +80,22 @@
   {
     "id": "004",
     "title": "Kasa",
-    "visible": false,
+    "visible": true,
     "subtitle": "Front-end",
     "cover": "/images/fond_kasa.webp",
     "coverSmall": "/images/kasa.webp",
-    "description": [""],
-    "issues": [""],
-    "solutions": [],
+    "description": [
+      "Kasa est une plateforme de location d'appartements entre particuliers.",
+      "L'objectif du projet consistait à refondre le site existant en utilisant React pour le front-end. Il s'agissait de traduire les maquettes en composants React réutilisables, de mettre en place la navigation de la galerie d'images, ainsi que d'intégrer les fonctionnalités des DropBoxes tout en garantissant une expérience utilisateur fluide et responsive."
+    ],
+    "issues": [
+      "Traduire une maquette en composants React pour implémenter rapidement l'interface",
+      "Implémenter des fonctionnalités spécifiques à la galerie et aux DropBoxes"
+    ],
+    "solutions": [
+      "Analyser la maquette pour trouver des éléments réutilisables (header, bandeau, card...)",
+      "Mettre en place la navigation dans la galerie et le fonctionnement dynamique des DropBoxes"
+    ],
     "skills": [
       "Configurer la navigation entre les pages de l'application avec React Router",
       "Initialiser une application avec Create React App",
@@ -102,9 +112,19 @@
     "subtitle": "Back-end",
     "cover": "/images/fond_grimoire.webp",
     "coverSmall": "/images/grimoire.webp",
-    "description": [""],
-    "issues": [""],
-    "solutions": [],
+    "description": [
+      "Mon Vieux Grimoire est un site dédié à la notation de livres pour une chaîne de librairies. Les membres peuvent ajouter des livres à la plateforme et attribuer une note visible par le public.",
+      "L'objectif du projet était de développer le back-end de l'application en mettant en place une API RESTful, d'implémenter un système d'authentification sécurisé, et d'optimiser le traitement des images envoyées par les utilisateurs, en suivant les principes du Green Code pour une gestion optimale des ressources."
+    ],
+    "issues": [
+      "Sécuriser l’accès aux données et l’authentification des utilisateurs",
+      "Implémenter un système de validation des données et limiter les requêtes"
+    ],
+    "solutions": [
+      "Mettre en place l’authentification avec JWT et le hachage des mots de passe avec bcrypt.",
+      "Optimiser le back-end en appliquant les principes du Green Code pour réduire la consommation des ressources.",
+      "Mettre en oeuvre Sharp pour normaliser les images et améliorer les performances du site."
+    ],
     "skills": [
       "Implémenter un modèle logique de données conformément à la réglementation",
       "Mettre en œuvre des opérations CRUD de manière sécurisée",

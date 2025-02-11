@@ -155,4 +155,7 @@ main {
 }
 
 @media (max-width: utils.$small-screen-width) {
+  .conditionnal-break {
+    display: unset;
+  }
 }

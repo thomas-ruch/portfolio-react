@@ -5,12 +5,9 @@ function DropBox({ title, content }) {
 
   return (
     <div className="drop-box">
-      <div className="drop-title">
+      <div className="drop-title" onClick={() => setIsOpen(!isOpen)}>
         <span>{title}</span>
-        <i
-          className={`fa-solid fa-chevron-up ${isOpen ? "rotated" : ""}`}
-          onClick={() => setIsOpen(!isOpen)}
-        />
+        <i className={`fa-solid fa-chevron-up ${isOpen ? "rotated" : ""}`} />
       </div>
       <div className={`drop-txt ${isOpen ? "is-open" : ""}`}>
         <div className="drop-txt-content">
