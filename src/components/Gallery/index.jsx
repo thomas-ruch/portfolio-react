@@ -11,6 +11,7 @@ function Gallery() {
           title,
           subtitle,
           cover,
+          coverSmall,
           description,
           tags,
           urlGit,
@@ -24,6 +25,7 @@ function Gallery() {
             title={title}
             subtitle={subtitle}
             cover={cover}
+            coverSmall={coverSmall}
             description={description}
             tags={tags}
             urlGit={urlGit}

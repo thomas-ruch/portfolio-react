@@ -21,8 +21,8 @@ function Home() {
                 <a href="mailto:thomasruch@free.fr">thomasruch@free.fr</a>
               </p>
               <p>
-                <i class="fa-solid fa-dice-d6 fa-lg"></i> Code et meeples, même
-                passion.
+                <i class="fa-solid fa-dice-three fa-lg"></i> Code et meeples,
+                même passion.
               </p>
               <div class="social-links">
                 <FeatureBadge
@@ -52,11 +52,16 @@ function Home() {
             formation qui m'a permis d'acquérir des compétences en développement
             front-end et back-end. Ma stack principale comprend React,
             JavaScript, HTML et CSS (SASS) pour concevoir des interfaces
-            dynamiques et ergonomiques. Côté back-end, j'ai travaillé avec
-            Node.js, Express et MongoDB pour créer des applications performantes
-            et évolutives. J'aime relever de nouveaux défis et apprendre en
-            continu pour proposer des solutions adaptées aux besoins des
-            utilisateurs.
+            dynamiques et ergonomiques.
+          </p>
+          <p>
+            Côté back-end, j'ai travaillé avec Node.js, Express et MongoDB pour
+            créer des applications performantes et évolutives.
+          </p>
+          <p>
+            {" "}
+            J'aime relever de nouveaux défis et apprendre en continu pour
+            proposer des solutions adaptées aux besoins des utilisateurs.
           </p>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Tag from "../Tag";
 import DropBox from "../DropBox";
 import FeatureBadge from "../FeatureBadge";
@@ -16,10 +17,24 @@ function Card({
   solutions,
   skills,
 }) {
+  const [currentCover, setCurrentCover] = useState(
+    window.innerWidth <= 768 ? coverSmall : cover
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCurrentCover(window.innerWidth <= 768 ? coverSmall : cover);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [cover, coverSmall]);
+
   return (
     <li className="card">
       <div className="card-left">
-        <img src={cover} alt={`${title} cover`} />
+        <img src={currentCover} alt={`${title} cover`} />
+
         <div className="card-infos">
           <div>
             <h4>{title}</h4>

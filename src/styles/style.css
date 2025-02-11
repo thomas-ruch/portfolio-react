@@ -290,6 +290,7 @@ a.badge:hover {
 .card .card-right p {
   font-size: 18px;
   color: black;
+  text-align: justify;
 }
 .card .card-right .card-links {
   display: flex;
@@ -336,18 +337,26 @@ a.badge:hover {
     align-items: center;
     width: 90%;
     box-shadow: none;
-    margin: 0;
+    margin: 10px 0;
   }
   .card .card-left {
     width: 100%;
     padding: 5px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     border: 4px solid #e9d5a1;
+  }
+  .card .card-left img {
+    height: 60px;
+    object-fit: contain;
+    margin: 20px 0;
   }
   .card .card-right {
     width: 100%;
     padding: 9px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
+  }
+  .card .card-right p {
+    font-size: 16px;
   }
   .card .card-right .card-links {
     justify-content: center;
@@ -589,7 +598,8 @@ section {
 }
 #home-about p {
   width: 80%;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
+  text-align: justify;
 }
 
 #home-skills {
