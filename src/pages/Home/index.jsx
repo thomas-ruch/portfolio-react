@@ -40,10 +40,12 @@ function Home() {
                 <FeatureBadge
                   fa_icon="fa-brands fa-github fa-2x"
                   link="https://github.com/thomas-ruch"
+                  ariaLabel="Github de Thomas Ruch"
                 />
                 <FeatureBadge
                   fa_icon="fa-brands fa-linkedin fa-2x"
                   link="https://www.linkedin.com/in/thomas-ruch-51a540316/"
+                  ariaLabel="LinkedIn de Thomas Ruch"
                 />
               </div>
             </div>

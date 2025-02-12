@@ -136,14 +136,18 @@ section {
       padding: 0;
       gap: 25px;
 
-      .title-portrait {
-        width: 250px;
-        height: 250px;
-      }
-
       .portrait-container {
         height: 250px;
         width: 250px;
+
+        .title-portrait {
+          width: 250px;
+          height: 250px;
+        }
+
+        .title-portrait.invisible {
+          opacity: 1;
+        }
       }
 
       .title-infos {

@@ -4,8 +4,8 @@
     "visible": true,
     "title": "Booki",
     "subtitle": "Front-end",
-    "cover": "/images/fond_booki.webp",
-    "coverSmall": "/images/booki.webp",
+    "cover": "./images/fond_booki.webp",
+    "coverSmall": "./images/booki.webp",
     "description": [
       "Booki est une agence de voyage. La start-up souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
       "L'objectif du projet était d'intégrer l'interface du site avec en utilisant HTML et CSS."
@@ -32,8 +32,8 @@
     "visible": false,
     "title": "Sophie Bluel",
     "subtitle": "Front-end",
-    "cover": "/images/fond_bluel.webp",
-    "coverSmall": "/images/bluel.webp",
+    "cover": "./images/fond_bluel.webp",
+    "coverSmall": "./images/bluel.webp",
     "description": [
       "Sophie Bluel est architecte et souhaitait la mise en place d'un portfolio en ligne pour présenter ses travaux.",
       "L'objectif du projet était le développement de la page de présentation des travaux ainsi que la totalité de l'interface administrateur"
@@ -54,8 +54,8 @@
     "visible": true,
     "title": "Nina Carducci",
     "subtitle": "Débugage et optimisation",
-    "cover": "/images/fond_carducci.webp",
-    "coverSmall": "/images/carducci.webp",
+    "cover": "./images/fond_carducci.webp",
+    "coverSmall": "./images/carducci.webp",
     "description": [
       "Nina Carducci est photographe. Son site contenait des bugs, la navigation était peu fluide et le site n'était pas référencé.",
       "L'objectif du projet était de procéder à une optimisation de l'ensemble du site sur le plan technique, du référencement et de l'accessibilité"
@@ -82,8 +82,8 @@
     "title": "Kasa",
     "visible": true,
     "subtitle": "Front-end",
-    "cover": "/images/fond_kasa.webp",
-    "coverSmall": "/images/kasa.webp",
+    "cover": "./images/fond_kasa.webp",
+    "coverSmall": "./images/kasa.webp",
     "description": [
       "Kasa est une plateforme de location d'appartements entre particuliers.",
       "L'objectif du projet consistait à refondre le site existant en utilisant React pour le front-end. Il s'agissait de traduire les maquettes en composants React réutilisables, de mettre en place la navigation de la galerie d'images, ainsi que d'intégrer les fonctionnalités des DropBoxes tout en garantissant une expérience utilisateur fluide et responsive."
@@ -110,8 +110,8 @@
     "visible": true,
     "title": "Mon vieux grimoire",
     "subtitle": "Back-end",
-    "cover": "/images/fond_grimoire.webp",
-    "coverSmall": "/images/grimoire.webp",
+    "cover": "./images/fond_grimoire.webp",
+    "coverSmall": "./images/grimoire.webp",
     "description": [
       "Mon Vieux Grimoire est un site dédié à la notation de livres pour une chaîne de librairies. Les membres peuvent ajouter des livres à la plateforme et attribuer une note visible par le public.",
       "L'objectif du projet était de développer le back-end de l'application en mettant en place une API RESTful, d'implémenter un système d'authentification sécurisé, et d'optimiser le traitement des images envoyées par les utilisateurs, en suivant les principes du Green Code pour une gestion optimale des ressources."

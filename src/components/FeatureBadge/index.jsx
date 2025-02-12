@@ -4,6 +4,7 @@ function FeatureBadge({
   layout = "column",
   link,
   hideText = false,
+  ariaLabel,
 }) {
   const content = (
     <>
@@ -12,12 +13,15 @@ function FeatureBadge({
     </>
   );
 
+  const currentLabel = ariaLabel || title || "Icône non décrite";
+
   return link ? (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
       className={`badge ${layout === "row" ? "badge-row" : ""}`}
+      aria-label={currentLabel}
     >
       {content}
     </a>

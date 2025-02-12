@@ -53,9 +53,17 @@ function Card({
           <p key={index}>{elem}</p>
         ))}
         <div className="card-links">
-          <FeatureBadge fa_icon="fa-brands fa-github fa-2x" link={urlGit} />
+          <FeatureBadge
+            fa_icon="fa-brands fa-github fa-2x"
+            link={urlGit}
+            ariaLabel="Code GitHub"
+          />
           {urlSite && (
-            <FeatureBadge fa_icon="fa-solid fa-desktop fa-2x" link={urlSite} />
+            <FeatureBadge
+              fa_icon="fa-solid fa-desktop fa-2x"
+              link={urlSite}
+              ariaLabel="Site internet"
+            />
           )}
         </div>
         <DropBox title="Problématiques du projet" content={issues} />
